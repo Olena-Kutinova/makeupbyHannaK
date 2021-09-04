@@ -3,9 +3,203 @@
   <head>
     <meta charset="utf-8">
     <title>Main Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body>
-    Home Page
+    <header class="cd-header">
+
+		<div class="logo">
+            <img src="images/hanna-logo.jpg" alt="Hanna Logo" class="logo"/>
+		</div>
+    <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contact</a>
+  <a href="#blog">Blog</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	</header>
+
+
+  <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="images/billboard-model1.jpg" style="width:100%" alt="model photo">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/billboard-model2.jpg" style="width:100%" alt="model photo">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/billboard-model3.jpg"  style="width:100%" alt="model photo">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/billboard-model4.jpg"  style="width:100%" alt="model photo">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+  <div class="quote-container">
+    <img src="images/quote-background.jpg" alt="make up by Hanna K" style="width:100%;">
+    <div class="quote-centered">
+      <p>We all deserve to feel good in our own skin and makeup can give us that uplift when we need it the most</p></div>
+  </div>
+
+
+<div class="introduction-container">
+<h2>About me</h2>
+<p>
+<img src="images/hanna-intro2.jpg" alt="Your Image">
+Your Text Goes Here Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+
+
+
+
+<div class="services-container">
+  <h2>Services</h2>
+<div class="services-row">
+  <div class="services-column">
+    <img src="images/services-event-makeup.jpg" alt="Event makeup" style="width:100%">
+    <h3>Event makeup</h3>
+    <p>Look your best and be the center of attention</p>
+  </div>
+  <div class="services-column">
+    <img src="images/services-makeup-lessons.jpg" alt="Makeup lessons" style="width:100%">
+    <h3>Makeup lessons</h3>
+    <p>Capture your best version with the right makeup</p>
+  </div>
+  <div class="services-column">
+    <img src="images/services-makeup-consultation.jpg" alt="Makeup consultation" style="width:100%">
+    <h3>Makeup consultation</h3>
+    <p>Find the best makeup for your skin</p>
+  </div>
+</div>
+</div>
+
+
+
+
+<!-- Testimonials -->
+<div class="tes-slideshow-container">
+
+<div class="tes-mySlides">
+  <q>Hanna did my make up for my wedding day and she did a phenomenal job. I absolutely loved her work! She was professional and kind and even kept me calm the morning of the wedding!</q>
+  <p class="author">- Olena K.</p>
+</div>
+
+<div class="tes-mySlides">
+  <q>She was amazing, I got so many complements on my makeup that night, her work was beautiful. She was really cool and she even gave me advice on my acne treatment, I really enjoyed the experience with her.</q>
+  <p class="author">- Maria P.</p>
+</div>
+
+<div class="tes-mySlides">
+  <q>I had an amazing time getting my makeup done !! My photos came out amazing. Thank you for your artistry! Definitely recommend Hanna! </q>
+  <p class="author">- Yilan W.</p>
+</div>
+
+<a class="prev" onclick="plusTesSlides(-1)">❮</a>
+<a class="next" onclick="plusTesSlides(1)">❯</a>
+
+</div>
+
+<div class="tes-dot-container">
+  <span class="tes-dot" onclick="currentTesSlide(1)"></span>
+  <span class="tes-dot" onclick="currentTesSlide(2)"></span>
+  <span class="tes-dot" onclick="currentTesSlide(3)"></span>
+</div>
+
+<script>
+var slideTesIndex = 1;
+showTesSlides(slideTesIndex);
+
+function plusTesSlides(n) {
+  showTesSlides(slideTesIndex += n);
+}
+
+function currentTesSlide(n) {
+  showTesSlides(slideTesIndex = n);
+}
+
+function showTesSlides(n) {
+  var k;
+  var tesSlides = document.getElementsByClassName("tes-mySlides");
+  var tesDots = document.getElementsByClassName("tes-dot");
+  if (n > tesSlides.length) {slideTesIndex = 1}
+  if (n < 1) {slideTesIndex = tesSlides.length}
+  for (k = 0; k < tesSlides.length; k++) {
+      tesSlides[k].style.display = "none";
+  }
+  for (k = 0; k < tesDots.length; k++) {
+      tesDots[k].className = tesDots[k].className.replace(" active", "");
+  }
+  tesSlides[slideTesIndex-1].style.display = "block";
+  tesDots[slideTesIndex-1].className += " active";
+}
+</script>
+
+
+
+
+
+<!-- Social Media-->
+
+<ul class="social-menu">
+    <li><a href="https://api.whatsapp.com/send?phone=+8613012876134"><i class="fab fa-facebook"></i></a></li>
+    <li><a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+    <li><a href="https://www.instagram.com/makeup_by_hannak/"><i class="fab fa-instagram"></i> </a></li>
+    <li><a href="https://youtube.com/"><i class="fab fa-youtube"></i> </a></li>
+</ul>
 
   </body>
 </html>
