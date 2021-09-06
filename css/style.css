@@ -193,23 +193,28 @@ img {vertical-align: middle;}
 
 /* Intro*/
 .introduction-container img {
-    width: 50%;
+    width: 35%;
     float: left;
-    padding-right: 20px;
+    margin-right: 20px;
+
   }
 .introduction-container {
     padding: 0 30px;
-  }
 
+  }
+.introduction-container p{
+  text-align: justify;
+}
 
 @media screen and (max-width: 768px) {
    .introduction-container img {
    width: 250px;
  }
-}
-@media screen and (max-width: 768px) {
+
+@media screen and max-width: 768px {
    .introduction-container img {
-   width: 100%;
+   width: 50%;
+   margin: 0;
  }
 }
 
