@@ -97,14 +97,14 @@ h5 {
 .topnav .icon {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -184,7 +184,7 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 768px) {
   .prev, .next,.text {font-size: 11px}
 }
 
@@ -202,12 +202,12 @@ img {vertical-align: middle;}
   }
 
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 768px) {
    .introduction-container img {
    width: 250px;
  }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
    .introduction-container img {
    width: 100%;
  }
@@ -235,7 +235,7 @@ img {vertical-align: middle;}
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .services-column {
     width: 100%;
   }
@@ -411,7 +411,7 @@ footer {
   width: 100%;
 }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .column {
     flex: 100%;
     max-width: 100%;
