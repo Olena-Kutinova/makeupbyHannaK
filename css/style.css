@@ -36,7 +36,7 @@ h2 {
   font-weight: 600;
   margin: 10px auto;
   padding-top: 1rem;
-  font-size: 28px;
+  font-size: 26px;
   text-align: center;
 }
 
@@ -193,7 +193,7 @@ img {vertical-align: middle;}
 
 /* Intro*/
 .introduction-container img {
-    width: 30%;
+    width: 25%;
     float: left;
     margin-right: 20px;
 
@@ -307,11 +307,19 @@ img {vertical-align: middle;}
 }
 
 /* Add an italic font style to all quotes */
-q {font-style: italic;}
+q {
+  font-style: italic;
+  font-size: 14px;
+
+}
 .author {
   text-align: right;
+  font-size: 12px;
 }
 
+.copyright p{
+  font-size: 14px;
+}
 
 
 
