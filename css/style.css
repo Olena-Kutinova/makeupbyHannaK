@@ -334,6 +334,47 @@ q {
 
 
 
+
+/* Portfolio button */
+.button {
+  background-color: #d6948c;
+  border: none;
+  color: #f6d6d6;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 0 auto 20px auto;
+
+
+
+}
+
+.buttonPortfolio {
+  background-color: #d6948c;
+  color: white;
+  border: 1px solid #c0857e;
+  border-radius: 12px;
+
+}
+
+.buttonPortfolio:hover {
+  background-color: #c0857e;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
 .social-container{
   margin: 0 auto;
  text-align: center;
