@@ -356,14 +356,17 @@ q {
 
 .buttonPortfolio {
   background-color: #d6948c;
-  color: white;
   border: 1px solid #c0857e;
   border-radius: 12px;
-
 }
 
 .buttonPortfolio:hover {
   background-color: #c0857e;
+  color: white;
+}
+
+.buttonPortfolio a {
+  text-decoration:none;
   color: white;
 }
 
