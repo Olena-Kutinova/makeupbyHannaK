@@ -165,8 +165,8 @@ img {vertical-align: middle;}
 }
 @media screen and (max-width: 420px) {
   .dot{
-    height: 20px;
-    width: 20px;
+    height: 12px;
+    width: 12px;
     margin: 0;
   }
 }
@@ -318,9 +318,9 @@ img {vertical-align: middle;}
 }
 @media screen and (max-width: 420px) {
   .tes-dot{
-    height: 20px;
-    width: 20px;
-    margin: 0 10px;
+    height: 12px;
+    width: 12px;
+    margin: 0;
   }
 }
 /* Add a background color to the active dot/circle */
