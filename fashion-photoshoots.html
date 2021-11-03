@@ -46,6 +46,26 @@ function myFunction() {
 	</header>
 
   <h1>Fashion Photoshoots</h1>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">↑Up</button>
+<script>
+  var topbutton = document.getElementById("topBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topbutton.style.display = "block";
+  } else {
+    topbutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
 
   <div class="row">
     <div class="column">

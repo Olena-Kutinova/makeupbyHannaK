@@ -261,19 +261,20 @@ img {vertical-align: middle;}
 .tes-slideshow-container {
   position: relative;
   background: #faeaea;
+
 }
 
 /* Slides */
 .tes-mySlides {
   display: none;
-  padding: 50px 60px;
-  height: 280px;
+  padding: 40px 60px;
+  /*height: 280px;*/
   text-align: center;
 }
 @media screen and (max-width: 420px) {
   .tes-mySlides{
     padding: 30px 50px;
-    height: 480px;
+/*    height: 480px;*/
   }
 }
 
@@ -390,7 +391,26 @@ q {
 
 
 
+/*Buck to Top Button */
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #888;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
 
+#topBtn:hover {
+  background-color: #555;
+}
 
 
 
