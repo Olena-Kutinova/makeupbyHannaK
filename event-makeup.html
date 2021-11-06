@@ -46,11 +46,33 @@ function myFunction() {
 	</header>
 
   <h1>Event Makeup</h1>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">↑Up</button>
+<script>
+  var topbutton = document.getElementById("topBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topbutton.style.display = "block";
+  } else {
+    topbutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
 
   <div class="row">
     <div class="column">
       <img src="images/model13.jpg" alt="model photo">
       <img src="images/model13a.jpg" alt="model photo">
+      <h6>Photos by Rahul Kumar Keshari</h6>
 
 
     </div>
@@ -58,8 +80,9 @@ function myFunction() {
     <div class="column">
 
 <img src="images/model14.jpg" alt="model photo">
-      <img src="images/services-event-makeup.jpg" alt="model photo">
+<h6>Photo by Viktor Kutsyi</h6>
       <img src="images/model6b.JPG" alt="model photo">
+      <img src="images/services-event-makeup.jpg" alt="model photo">
 
 
 

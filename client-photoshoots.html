@@ -46,21 +46,45 @@ function myFunction() {
 	</header>
 
   <h1>Client Photoshoots</h1>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">↑Up</button>
+<script>
+  var topbutton = document.getElementById("topBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topbutton.style.display = "block";
+  } else {
+    topbutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
 
   <div class="row">
     <div class="column">
       <img src="images/model8a.jpg" alt="model photo">
       <img src="images/model8.jpg" alt="model photo">
+      <h6>Photos by Theo Niculae</h6>
 
       <img src="images/model7b.jfif" alt="model photo">
       <img src="images/billboard-model3.jpg" alt="model photo">
+      <h6>Photos by Maria Bulynina</h6>
 
-      <img src="images/model9.jpg" alt="model photo">
-      <img src="images/model9c.jpg" alt="model photo">
+      <img src="images/model1.jpg" alt="model photo">
+      <img src="images/model1a.jpg" alt="model photo">
 
-      <img src="images/model10a.jpg" alt="model photo">
-      <img src="images/model10c.jpg" alt="model photo">
 
+      <img src="images/model5b.jfif" alt="model photo">
+      <img src="images/model5a.jpg" alt="model photo">
 
 
     </div>
@@ -78,9 +102,12 @@ function myFunction() {
 
       <img src="images/model11.jpg" alt="model photo">
       <img src="images/model11a.jpg" alt="model photo">
+      <h6>Photos by Maria Bulynina</h6>
 
-      <img src="images/model5b.jfif" alt="model photo">
-      <img src="images/model5a.jpg" alt="model photo">
+      <img src="images/model10a.jpg" alt="model photo">
+      <img src="images/model10c.jpg" alt="model photo">
+
+
 
 
 
@@ -93,8 +120,10 @@ function myFunction() {
       <img src="images/model2.jpg" alt="model photo">
       <img src="images/model2c.jpg" alt="model photo">
 
-      <img src="images/model1.jpg" alt="model photo">
-      <img src="images/model1a.jpg" alt="model photo">
+
+            <img src="images/model9.jpg" alt="model photo">
+            <img src="images/model9c.jpg" alt="model photo">
+
 
       <img src="images/hanna-photo2.jfif" alt="model photo">
       <img src="images/hanna-photo1.jfif" alt="model photo">
